@@ -14,6 +14,10 @@ export const useForceUpdate = () => {
 
 }
 
+const sortstyle={
+  color: "white"
+}
+
 
 function InventoryGrid2() {
 
@@ -37,15 +41,15 @@ function InventoryGrid2() {
         <main>
         <section class="sort-options">
           <h2>Categories</h2> 
-        <button class="sort-more" onClick={() => {food(); much_more(); getColor(); list_maker(); openFood(); forceUpdate(); }}>Food</button>
-            <button class="sort-more" onClick={() => { house(); much_more();  getColor(); list_maker(); openFood(); forceUpdate(); }}>Household Items</button>
+        <button class="sort-more" style={sortstyle} onClick={() => {food(); much_more(); getColor(); list_maker(); openFood(); forceUpdate(); }}>Food</button>
+            <button class="sort-more" style={sortstyle} onClick={() => { house(); much_more();  getColor(); list_maker(); openFood(); forceUpdate(); }}>Household Items</button>
           </section>
           <section class="sort-options">
             <h3>SORT BY</h3>
-            <button class="sort-name" onClick={() => { alphabatize(); getColor(); forceUpdate(); }}>Sort By Name</button>
-            <button class="sort-left" onClick={() => { left_amount(); getColor(); forceUpdate(); }}>Sort By Amount Left</button>
-            <button class="sort-needed" onClick={() => { needed_amount(); getColor(); forceUpdate(); }}>Sort By Amount Needed</button>
-            <button class="sort-more" onClick={() => { quantity_more(); getColor(); forceUpdate(); }}>Sort By How much more</button>
+            <button class="sort-name" style={sortstyle} onClick={() => { alphabatize(); getColor(); forceUpdate(); }}>Sort By Name</button>
+            <button class="sort-left" style={sortstyle} onClick={() => { left_amount(); getColor(); forceUpdate(); }}>Sort By Amount Left</button>
+            <button class="sort-needed" style={sortstyle} onClick={() => { needed_amount(); getColor(); forceUpdate(); }}>Sort By Amount Needed</button>
+            <button class="sort-more" style={sortstyle} onClick={() => { quantity_more(); getColor(); forceUpdate(); }}>Sort By How much more</button>
 
 
           </section>

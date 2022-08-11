@@ -1,6 +1,7 @@
 import ArrowRight from "@mui/icons-material/ArrowRight";
 import { Paper } from "@mui/material";
 import "./main.css";
+import { Link } from "react-router-dom";
 
 
 function Homepage() {
@@ -43,11 +44,13 @@ function Homepage() {
             </div>
             <div className="involved">
                 <div>
+                <Link to="inventory">
                 <Paper style={paperstyle1}>
                     <div className="paper-text">
                         <p>View <br></br>Inventory <ArrowRight></ArrowRight></p>
                     </div>
                 </Paper>
+                </Link>
                 </div>
                 <div>
                 <Paper style={paperstyle2}>
@@ -56,11 +59,13 @@ function Homepage() {
                     </div>
                 </Paper>
                 <div>
+                <Link to="/cart">
                 <Paper style={paperstyle3}>
                 <div className="paper-text">
                         <p>Request <br></br>Items <ArrowRight></ArrowRight></p>
                     </div>
                 </Paper>
+                </Link>
                 </div>
                 </div>
             </div>
